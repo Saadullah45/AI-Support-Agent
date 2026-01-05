@@ -39,7 +39,7 @@ The diagram below illustrates the flow of a user query through the various layer
 git clone [https://github.com/Saadullah45/AI-Support-Agent.git](https://github.com/Saadullah45/AI-Support-Agent.git)
 cd AI-Support-Agent
 
-```bash
+```
 
 
 ### 2. Set Up Virtual Environment
@@ -52,7 +52,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-```bash
+```
 
 ### 3. Configure Environment Variables
 Create a .env file in the root directory:
@@ -60,13 +60,13 @@ Create a .env file in the root directory:
 GROQ_API_KEY=your_groq_api_key_here
 # Replace with your local or cloud DB URL
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-```bash
+```
 
 ### 4. Initialize the Databases
 Seed the initial customer data and knowledge base:
 ```bash
 python seed_data.py
-```bash
+```
 
 
 ## Running the Application
@@ -74,12 +74,12 @@ You will need two terminal windows open to run the full stack.
 ### Terminal 1: Start the Backend (FastAPI)
 ```bash
 python main.py
-```bash
+```
 
 ### Terminal 2: Start the Frontend (Streamlit)
 ```bash
 streamlit run UI.py
-```bash
+```
 
 
 ## 🌐 Deployment
